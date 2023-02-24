@@ -3,6 +3,7 @@ import CouponCommodityService from "./CouponCommodityService";
 import GoodsCommodityService from "./GoodsCommodityService";
 import ICommodity from "./ICommodity";
 
+// 简单工厂，
 export default class StoreFactory {
   getCommodityService(commodityType: number): ICommodity | null {
     if (commodityType === 1) return new CouponCommodityService();
